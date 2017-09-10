@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, intial-scale=1" />
+        <title>Menu Burger test</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
         <body>
+            <div class="container">
             <nav class="site-nav">
-
+                <h1>Menu Burger <span>test</span></h1>
                 <div class="menu-toggle">
                     <div class="hamburger"></div>
                 </div>
@@ -19,7 +22,8 @@
 
                 </ul>
             </nav>
-            <script src="http://code.jquery.com/jquery.min.js"></script>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
             <script>$('.menu-toggle').click(function()){
                 $('ul').toggleClass('opening');
                 $(this).toggleClass('open');
