@@ -70,3 +70,25 @@ nav a:hover, nav a:focus{
     -webkit-transform: translateX(4px);
     transform: translateX(4px);
 }
+.open .hamburger{
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.open .hamburger::before{
+    display: none;
+}
+.open .hamburger::after{
+    -webkit-transform: translateY(-1px) rotate(-90deg);
+    transform: translateY(-1px rotate(-90deg);
+}
+
+/ ----- Media Queries ------/
+@media (min-width:780px){
+    .menu-toggle{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+}
