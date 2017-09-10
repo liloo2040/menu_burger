@@ -1,0 +1,17 @@
+nav{
+    margin: 0;
+    padding:0;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav ul.opening{
+    display: block;
+    height: 30px;
+}
