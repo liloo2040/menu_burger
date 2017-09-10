@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, intial-scale=1" />
         <title>Menu Burger test</title>
-<link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">        
+        <link rel="stylesheet"  href="style.css" type="text/css" />
     </head>
         <body>
             <div class="container">
             <nav class="site-nav">
-                <h1>Menu Burger <span>test</span></h1>
+                <h1 class="logo">Menu Burger <span>test</span></h1>
+
                 <div class="menu-toggle">
                     <div class="hamburger"></div>
                 </div>
@@ -24,7 +27,7 @@
             </nav>
             </div>
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-            <script>$('.menu-toggle').click(function()){
+            <script type="text/javascript">$('.menu-toggle').click(function()){
                 $('ul').toggleClass('opening');
                 $(this).toggleClass('open');
             })</script>

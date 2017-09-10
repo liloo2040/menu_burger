@@ -1,8 +1,12 @@
-
+body{
+    margin: 0 auto;
+    font-family: 'URW Gothic L', 'Century Gothic', sans-serif;
+}
 /* CSS de base */
 nav{
     margin: 0;
     padding:0;
+    background: saddlebrown;
 }
 nav ul{
     display: flex;
