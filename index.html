@@ -4,28 +4,26 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, intial-scale=1" />
         <title>Menu Burger test</title>
-        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">        
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">   
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet"  href="style.css" type="text/css" />
     </head>
         <body>
-            <div class="container">
-            <nav class="site-nav">
-                <h1 class="logo">Menu Burger <span>test</span></h1>
+            <header>
+                <a class="logo">Menu Burger <span>test</span></a>
+            <nav>
+                <a href="#" id="menu-icon"></a>
 
-                <div class="menu-toggle">
-                    <div class="hamburger"></div>
-                </div>
-
-                <ul class="open desktop">
-                    <li><a href="#!">Home</a></li>
-                    <li><a href="#!">Latest News</a></li>
-                    <li><a href="#!">About us</a></li>
-                    <li><a href="#!">Download Pugin</a></li>
-                    <li><a href="#!">Contact</a></li>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Download Pugin</a></li>
+                    <li><a href="#">Contact</a></li>
 
                 </ul>
             </nav>
-            </div>
+        </header>
             <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
             <script type="text/javascript">$('.menu-toggle').click(function()){
                 $('ul').toggleClass('opening');

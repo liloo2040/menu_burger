@@ -1,6 +1,17 @@
+
+
 body{
     margin: 0 auto;
-    font-family: 'URW Gothic L', 'Century Gothic', sans-serif;
+}
+
+header {
+    background: #f62459;
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 /* CSS de base */
 nav{
@@ -15,110 +26,4 @@ nav ul{
     margin: 0;
     padding: 0;
     display: none;
-}
-
-nav ul.opening{
-    display: block;
-    height: 30px;
-}
-nav li{
-    border-bottom: 1px solid #f6f4e2;
-}
-nav li:last-child{
-    border-bottom: none;
-}
-nav a{
-    color: #EBEBD3;
-    background: #e7a119;
-    display: block;
-    padding: 1.5em 4em 1.5em 3em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-nav a:hover, nav a:focus{
-    background: #E4B363;
-}
-
-.site-nav--icon{
-    font-size: 1.4em;
-    margin-right: 1em;
-    width: 1.1em;
-    text-align: right;
-    color: rgba(255, 255, 255, .4);
-}
-/* CSS déroulement */
-
-.menu-toggle{
-    position: absolute;
-    padding: 0.8em;
-    top: 1em;
-    right: .5em;
-    cursor: pointer;
-}
-.hamburger, .hamburger::before, .hamburger::after{
-    content: '';
-    display: block;
-    background: #EBEBD3;
-    height: 3px;
-    width: 2em;
-    border-radius: 3px;
-    -webkit-transition: all ease-in-out 350ms;
-    transition: all ease-in-out 350ms;
-}
-.hamburger::before{
-    -webkit-transform: translateY(-7px);
-    transform: translateY(-7px);
-}
-.hamburger::after{
-    -webkit-transform: translateX(4px);
-    transform: translateX(4px);
-}
-.open .hamburger{
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.open .hamburger::before{
-    display: none;
-}
-.open .hamburger::after{
-    -webkit-transform: translateY(-1px) rotate(-90deg);
-    transform: translateY(-1px rotate(-90deg);
-}
-
-/ ----- Media Queries ------/
-@media (min-width:780px){
-    .menu-toggle{
-        display: none;
-    }
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    nav li{
-        flex: 11 auto;
-        border: none;
-    }
-    nav li a{
-        padding: 1.5em 1.3em 1.5em 1.3em;
-        margin: 0;
-        border: none;
-        background-color: #f04343;
-    }
-    nav a:hover, nav a:focus{
-        background-color: rgba(255, 255, 255, .10);
-    }
-    .logo{
-        flex: 0 0 200px;
-        margin: 0;
-        padding-left: 20px;
-    }
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        background-color: #f04343;
-    }
 }
