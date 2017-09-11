@@ -2,7 +2,10 @@ body{
     margin: 0 auto;
     font-family: 'URW Gothic L', 'Century Gothic', sans-serif;
 }
-
+a {
+    text-decoration: none;
+    color: #00FF99;
+}
 header, nav {
     background: #06b206;
     text-align: right;
@@ -15,10 +18,11 @@ nav li{
     list-style: none;
 }
 .menu{
-    margin: 0 30px 0 0;
+    margin: 0 10px 0 0;
 }
 .menu a{
-    color: grey;
+    clear:right;
+    color: #00D346;
     margin: 0 10px;
     line-height: 50px;
 }
@@ -30,6 +34,46 @@ span {
 }
 
 label{
-    margin: 0 40px 0 0;
+    margin: 0 20px 0 0;
     font-size: 25px;
+    line-height: 50px;
+    display: none;
+    width: 26px;
+}
+
+header{
+    margin: auto;
+}
+
+#toggle{
+    display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 500px) {
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    nav li {
+        display: block;
+    }
+    .menu a{
+        display: block;
+        border-bottom: #06b206;
+        margin: 0;
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    nav .name{
+        font-size: 16px;
+        width: 100%;
+    }
 }
