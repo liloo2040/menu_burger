@@ -18,27 +18,26 @@ nav li{
     list-style: none;
 }
 .menu{
-    margin: 0 10px 0 0;
+    margin: 0 auto;
 }
 .menu a{
-    clear:right;
-    color: #00D346;
-    margin: 0 10px;
+    margin: 0 auto;
+    color: #ffffff;
     line-height: 50px;
 }
 nav a{
     text-decoration: none;
 }
 span {
-    color: #0088bb;
+    color: #A6F8C1;
 }
 
 label{
-    margin: 0 20px 0 0;
+    margin: 0 auto;
     font-size: 25px;
     line-height: 50px;
     display: none;
-    width: 26px;
+    text-align: center;
 }
 
 header{
@@ -54,6 +53,8 @@ header{
     label{
         display: block;
         cursor: pointer;
+        color: #ffffff;
+        font-size: 25px;
     }
 
     .menu{
@@ -66,8 +67,9 @@ header{
     }
     .menu a{
         display: block;
-        border-bottom: #06b206;
-        margin: 0;
+        color:  #06b206;
+        border: 1px solid black;
+        margin: 0 10px 0 0;
     }
     #toggle:checked + .menu {
         display: block;
@@ -75,5 +77,8 @@ header{
     nav .name{
         font-size: 16px;
         width: 100%;
+    }
+    span{
+        color: #665522;
     }
 }
