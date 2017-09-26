@@ -8,71 +8,9 @@ html, body{
     height: 48px;
     margin: 0 auto;
 }
-#site-navigation #main-menu, #site-navigation > input{
-    display: none;
-}
 
-#site-navigation > label{
-    display: block;
-    font-size: 36px;
-    color: #fff;
-    position: absolute;
-    right: 20px;
-    width: 36px;
-    padding: 0;
-    cursor: pointer; 
-    -webkit-touch-callout: none;
-    -webkit-user-select:none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; 
-}
-#site-navigation > input:checked + #main-menu{
-    display: block;
-    clear: both;
-    margin: 0 auto;
-    background: #000;
-    color: #fff;
-}
-#site-navigation ul li{
-    display: block;
-    padding: 12px 10px;
-    text-align: center;
-    margin: 0 auto;
-}
-#site-navigation a{
-    text-decoration: none;
-    color: #fff;
-    text-align: center;
-    
-}
 
 /* Media Queries */
 @media only screen and (max-width: 1068px) {
-    html, body{
-        margin: 0 auto;
-    }
-   
-   #site-navigation{
-       height: auto;
-       text-align: center;
-       margin: 0 auto;
-   }
-   #site-navigation #main-menu{
-       display: inline-block;
-      text-align: center;
-      margin: 0 auto;
-   }
-   #site-navigation > label {
-       display: none;
-   }
-   #site-navigation ul li{
-       display: inline-block;
-       text-align: center;
-   }
-   ul #main-menu{
-       text-align: center;
-       margin: 0 auto;
-   }
+    
 }
