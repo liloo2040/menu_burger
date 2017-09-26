@@ -6,17 +6,28 @@ nav{
     background: #000;
     height: 48px;
     margin: 0 auto;
+    with: 100%;
+    margin: 0;
 }
-nav .main-menu{
+.main-menu{
+    margin: 0 10px;
+    text-align: center;
     list-style: none;
-    display: inline-block;
 }
-nav > li{
+.main-menu > li{
     display: inline-block;
+    padding: 10px;
 }
-nav .main-menu a{
+.main-menu ul {
+    width: 100%;
+}
+.main-menu a{
+    display: inline;
     list-style: none;
-    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 #toggle-menu{
     display: none;
