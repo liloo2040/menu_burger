@@ -2,21 +2,19 @@ html, body{
     margin: 0 auto;
     font-family: 'URW Gothic L', 'Century Gothic', sans-serif;
 }
-nav{
+nav .main-menu{
     background: #000;
-    height: 48px;
     margin: 0 auto;
     with: 100%;
     margin: 0;
-}
-.main-menu{
-    margin: 0 10px;
     text-align: center;
-    list-style: none;
+    padding: 10px;
 }
-.main-menu > li{
+
+nav .main-menu > li{
     display: inline-block;
     padding: 10px;
+    text-decoration: none;
 }
 .main-menu ul {
     width: 100%;
@@ -25,7 +23,7 @@ nav{
     display: inline;
     list-style: none;
     margin: 0 10px;
-    text-decoration: none;
+    
     text-transform: uppercase;
     color: #FFFFFF;
 }
