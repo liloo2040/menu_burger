@@ -33,6 +33,28 @@ label{
 
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 500px) {
+    nav a{
+        display: block;
+    }
+    nav .main-menu > li{
+        display: inline;
+    }
+    label{
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        margin: 0 auto;
+        color:#FFFFFF;
+        background: #000000;
+    }
+    .main-menu{
+        text-align: center;
+        display: none;
+    }
+    #toggle-menu:checked + .main-menu{
+        display: block;
+    }
 }
