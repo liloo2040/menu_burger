@@ -2,38 +2,66 @@ html, body{
     margin: 0 auto;
     font-family: 'URW Gothic L', 'Century Gothic', sans-serif;
 }
+
 nav{
     display: block;
+
+nav .main-menu{
+
     background: #000;
-    height: 48px;
     margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+nav .main-menu > li{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+nav a{
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+#toggle-menu{
+    display: none;
+}
+label{
+    display: none;
+}
+>>>>>>> dev
 
 
 /* Media Queries */
-@media only screen and (max-width: 600px) {
-    html, body{
-        margin: 0 auto;
+
+@media only screen and (max-width: 500px) {
+    nav a{
+        display: block;
     }
-   
-   #site-navigation{
-       height: auto;
-       text-align: center;
-       margin: 0 auto;
-   }
-   #site-navigation #main-menu{
-       display: inline-block;
-      text-align: center;
-      margin: 0 auto;
-   }
-   #site-navigation > label {
-       display: none;
-   }
-   #site-navigation ul li{
-       display: inline-block;
-       text-align: center;
-   }
-   ul #main-menu{
-       text-align: center;
-       margin: 0 auto;
-   }
+    nav .main-menu > li{
+        display: inline;
+    }
+    label{
+        display: block;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        margin: 0 auto;
+        color:#FFFFFF;
+        background: #000000;
+    }
+    .main-menu{
+        text-align: center;
+        display: none;
+    }
+    #toggle-menu:checked + .main-menu{
+        display: block;
+    }
 }
