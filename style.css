@@ -6,7 +6,7 @@ html, body{
 nav{
     display: block;
 
-nav.main-menu{
+nav .main-menu{
     background: #000;
     margin: 0 auto;
     width: 100%;
@@ -34,8 +34,6 @@ nav a{
 label{
     display: none;
 }
-
-
 
 /* Media Queries */
 
