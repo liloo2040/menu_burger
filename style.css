@@ -2,6 +2,10 @@ body{
     margin: 0;
     font-family: 'URW Gothic L', 'Century Gothic', sans-serif;
 }
+
+nav{
+    display: block;
+
 nav .main-menu{
     background: #000;
     margin: 0;
@@ -32,9 +36,9 @@ label{
     display: none;
 }
 
-
 /* Media Queries */
 @media screen and (max-width: 500px) {
+
     nav a{
         display: block;
     }
